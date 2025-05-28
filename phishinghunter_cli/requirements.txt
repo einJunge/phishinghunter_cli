@@ -1,0 +1,7 @@
+certstream
+requests
+fuzzywuzzy
+python-telegram-bot
+python-dotenv
+selenium
+webdriver-manager
