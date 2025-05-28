@@ -3,12 +3,8 @@
 PhishingHunter es una herramienta avanzada para detectar dominios sospechosos que intentan suplantar una organización (como *tudominio.com*) utilizando certificados SSL públicos. Escanea tanto en tiempo real como de forma histórica, realiza análisis en VirusTotal y revisa el contenido web en busca de señales de phishing.
 
 ---
-██████╗ ██╗  ██╗██╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗  ██╗████████╗███████╗██████╗ 
-██╔══██╗██║  ██║██║██╔════╝██║  ██║██║████╗  ██║██╔═══██╗██║  ██║╚══██╔══╝██╔════╝██╔══██╗
-██████╔╝███████║██║███████╗███████║██║██╔██╗ ██║██║   ██║███████║   ██║   █████╗  ██████╔╝
-██╔═══╝ ██╔══██║██║╚════██║██╔══██║██║██║╚██╗██║██║   ██║██╔══██║   ██║   ██╔══╝  ██╔══██╗
-██║     ██║  ██║██║███████║██║  ██║██║██║ ╚████║╚██████╔╝██║  ██║   ██║   ███████╗██║  ██║
-╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
+![image](https://github.com/user-attachments/assets/b2935bcc-7f0e-499b-9e80-eddb9cdbd0a5)
+
 
 ---
 
