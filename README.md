@@ -46,6 +46,8 @@ cuando suceda se debe de reiniciar la herramienta
 - Bot de Telegram creado desde [@BotFather](https://t.me/botfather)
 
 ---
+![ChatGPT Image 28 may 2025, 16_14_25](https://github.com/user-attachments/assets/6508718f-68d2-4942-acc9-e5eab7820a78)
+
 
 ## 📦 Instalación
 
