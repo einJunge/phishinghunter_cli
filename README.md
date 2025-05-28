@@ -53,6 +53,7 @@ cuando suceda se debe de reiniciar la herramienta
 git clone https://github.com/einJunge/phishinghunter_cli.git
 mover la herramienta al directorio de /opt/
 cd phishinghunter_cli
+mkdir cache logs
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
