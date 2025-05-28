@@ -22,16 +22,19 @@ La herramienta suele tener un incoveniente con el crt.sh error de conexion (suel
 cuando suceda se debe de reiniciar la herramienta
 
 
-## 🚀 Características
 
-- 🔎 Monitor en tiempo real de certificados SSL (CertStream)
-- 📜 Análisis histórico de certificados (crt.sh)
-- 🧠 Verificación con VirusTotal
-- 🌐 Análisis de contenido web con Selenium
-- 💬 Alertas automáticas vía Telegram
-- 🔁 Reintentos automáticos en caso de fallos
-- 📦 Cache para evitar reportes duplicados
-- 🛠️ Soporte para ejecución como servicio (systemd)
+## 📌 Características
+
+- 🔍 **Monitoreo en tiempo real** con CertStream
+- 🕘 **Análisis histórico** desde `crt.sh`
+- 🧠 **Detección inteligente** con fuzzy matching (`fuzzywuzzy`)
+- 🤖 **Alertas automáticas** a Telegram
+- 🛡️ **Consulta de reputación** vía API de VirusTotal
+- 🌐 **Análisis web automatizado** con Selenium
+- 🧪 Modo DEMO disponible
+- 🗂️ Uso de caché para evitar reanálisis
+- 🔁 Reinicio automático ante fallos críticos
+- 🧭 Soporte para ejecución como servicio Linux (`systemd`)
 ---
 
 
@@ -66,7 +69,7 @@ DEMO_MODE = True: ejecuta análisis histórico + tiempo real.
 DEMO_MODE = False: solo monitorea en tiempo real.
 
 ## ▶️ Uso Manual
-python main.py
+python phishinghunter.py
 
 ## 🗃️ Sistema de Caché
 La herramienta guarda los dominios ya reportados en cache/historial_reportes.json, evitando duplicados tanto en modo demo como en producción.
