@@ -20,6 +20,7 @@ PhishingHunter es una herramienta avanzada para detectar dominios sospechosos qu
 - 🛠️ Soporte para ejecución como servicio (systemd)
 ---
 
+
 ## ⚙️ Requisitos
 
 - Python 3.8+
@@ -109,11 +110,6 @@ sudo systemctl start phishinghunter.service
 ## Verifica los logs:
 journalctl -u phishinghunter.service -f
 
-📄 Licencia
-MIT License - 2025 - [MARCOS HERNANDEZ | GREP "ASCITGROUP.COM"]
-
-🌐 Créditos
-Inspirado por iniciativas de OSINT y ciberseguridad comunitaria.
 
 
 
