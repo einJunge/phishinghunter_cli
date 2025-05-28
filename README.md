@@ -73,7 +73,7 @@ La herramienta guarda los dominios ya reportados en cache/historial_reportes.jso
 
 🧰 Archivos Importantes
 phishinghunter_cli/
-├── main.py                    # Archivo principal
+├── phishinghunter.py                    # Archivo principal
 ├── certstream_handler.py     # Monitor en tiempo real
 ├── historical_search.py      # Escaneo histórico (crt.sh)
 ├── telegram_alert.py         # Envío a Telegram
