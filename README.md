@@ -51,6 +51,7 @@ cuando suceda se debe de reiniciar la herramienta
 
 ```bash
 git clone https://github.com/einJunge/phishinghunter_cli.git
+mover la herramienta al directorio de /opt/
 cd phishinghunter_cli
 python3 -m venv venv
 source venv/bin/activate
@@ -104,15 +105,18 @@ sudo nano /etc/systemd/system/phishinghunterPro.service
 --
 ## Pega el contenido siguiente:
 [Unit]
-Description=PhishingHunter - SSL Phishing Detector
+Description=PhishingHunter CLI - Phishing Detector en Tiempo Real (con logs)
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /opt/phishinghunter_cli/phishinghunter.py
+User=root
 WorkingDirectory=/opt/phishinghunter_cli
+ExecStart=/opt/phishinghunter_cli/venv/bin/python3 /opt/phishinghunter_cli/phishinghunter.py
+StandardOutput=append:/opt/phishinghunter_cli/logs/phishinghunter.log
+StandardError=append:/opt/phishinghunter_cli/logs/phishinghunter.log
 Restart=on-failure
-RestartSec=10
-Environment="PYTHONUNBUFFERED=1"
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
 
 [Install]
 WantedBy=multi-user.target
