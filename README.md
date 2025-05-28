@@ -9,11 +9,17 @@ PhishingHunter_cli es una herramienta avanzada para detectar dominios sospechoso
 
 ---
 📄 Licencia
-MIT License - 2025 - [MARCOS HERNANDEZ | GREP "ASCITGROUP.COM"]
+MIT License - 2025 - [Marcos Hernandez | grep "Ascitgroup.com"]
 
 🤝 Contribuciones
 ¡Pull Requests y mejoras son bienvenidas! 🙌
 
+🌐 Créditos
+Inspirado por iniciativas de OSINT y ciberseguridad comunitaria.
+
+** Dato importante
+La herramienta suele tener un incoveniente con el crt.sh error de conexion (suele pasar cuando el trafico de crt.sh es muy lento y rechaza la conexion)
+cuando suceda se debe de reiniciar la herramienta
 
 
 ## 🚀 Características
