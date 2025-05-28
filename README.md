@@ -97,23 +97,24 @@ phishinghunter_cli/
 
 
 🧩 Ejecutar como Servicio (Linux)
-sudo nano /etc/systemd/system/phishinghunter.service
-
+sudo nano /etc/systemd/system/phishinghunterPro.service
+--
 ## Pega el contenido siguiente:
 [Unit]
 Description=PhishingHunter - SSL Phishing Detector
 After=network.target
 
 [Service]
-Type=simple
+ExecStart=/usr/bin/python3 /opt/phishinghunter_cli/phishinghunter.py
 WorkingDirectory=/opt/phishinghunter_cli
-ExecStart=/opt/phishinghunter_cli/venv/bin/python /opt/phishinghunter_cli/main.py
-Restart=always
-User=root
-Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+RestartSec=10
+Environment="PYTHONUNBUFFERED=1"
+
 [Install]
 WantedBy=multi-user.target
 
+---
 
 ## Habilita y ejecuta el servicio:
 sudo systemctl daemon-reexec
