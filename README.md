@@ -1,12 +1,20 @@
-# 🛡️ PhishingHunter
+# 🛡️ PhishingHunter_cli
 
-PhishingHunter es una herramienta avanzada para detectar dominios sospechosos que intentan suplantar una organización (como *tudominio.com*) utilizando certificados SSL públicos. Escanea tanto en tiempo real como de forma histórica, realiza análisis en VirusTotal y revisa el contenido web en busca de señales de phishing.
-
----
-![image](https://github.com/user-attachments/assets/b2935bcc-7f0e-499b-9e80-eddb9cdbd0a5)
-
+PhishingHunter_cli es una herramienta avanzada para detectar dominios sospechosos que intentan suplantar una organización (como *tudominio.com*) utilizando certificados SSL públicos. Escanea tanto en tiempo real como de forma histórica, realiza análisis en VirusTotal y revisa el contenido web en busca de señales de phishing.
 
 ---
+![image](https://github.com/user-attachments/assets/4e72772d-0f2e-49fd-996e-4be092204a70)
+
+
+
+---
+📄 Licencia
+MIT License - 2025 - [MARCOS HERNANDEZ | GREP "ASCITGROUP.COM"]
+
+🤝 Contribuciones
+¡Pull Requests y mejoras son bienvenidas! 🙌
+
+
 
 ## 🚀 Características
 
@@ -81,11 +89,11 @@ phishinghunter_cli/
 🔧 Modo Demo: Activado (Histórico + Tiempo real)
 ⌛ Esperando coincidencias de certificados...
 
+
 🧩 Ejecutar como Servicio (Linux)
 sudo nano /etc/systemd/system/phishinghunter.service
 
-Pega el contenido siguiente:
-
+## Pega el contenido siguiente:
 [Unit]
 Description=PhishingHunter - SSL Phishing Detector
 After=network.target
@@ -97,9 +105,9 @@ ExecStart=/opt/phishinghunter_cli/venv/bin/python /opt/phishinghunter_cli/main.p
 Restart=always
 User=root
 Environment=PYTHONUNBUFFERED=1
-
 [Install]
 WantedBy=multi-user.target
+
 
 ## Habilita y ejecuta el servicio:
 sudo systemctl daemon-reexec
@@ -109,7 +117,5 @@ sudo systemctl start phishinghunter.service
 
 ## Verifica los logs:
 journalctl -u phishinghunter.service -f
-
-
-
-
+tail -f phishinghunterPro.log
+---
